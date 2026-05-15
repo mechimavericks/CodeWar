@@ -22,7 +22,7 @@ function ComingSoon() {
         }}
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)), url('./images/college-image.png')`,
+          backgroundImage: `linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)), url('/images/college-image.png')`,
         }}
       ></motion.div>
 
@@ -36,7 +36,27 @@ function ComingSoon() {
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none mix-blend-overlay z-2"></div>
 
 
+      {/* Top Navigation / Archive Link */}
+      <div className="absolute top-8 right-8 z-20">
+        <motion.a 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.8, duration: 0.8 }}
+          href="https://codewar-2025.mechimavericks.tech/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="group flex items-center space-x-2 px-6 py-3 bg-gray-800/30 backdrop-blur-md rounded-full border border-gray-700/50 text-gray-400 text-xs md:text-sm font-bold hover:text-teal-400 hover:border-teal-500/30 transition-all duration-300 shadow-2xl hover:shadow-teal-500/10"
+        >
+          <span className="tracking-[0.2em] uppercase">CodeWar 1.0</span>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </motion.a>
+      </div>
+
+
       <div className="relative z-10 flex flex-col items-center px-4 max-w-4xl">
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -113,18 +133,29 @@ function ComingSoon() {
         </motion.div>
       </div>
 
-      {/* Bottom Footer Decor */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ delay: 1.5, duration: 1 }}
+        animate={{ opacity: 0.6 }}
+        transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-12 left-0 w-full flex flex-col items-center gap-4"
       >
-        <div className="flex space-x-8">
+        <div className="flex items-center space-x-6">
           <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-gray-500"></div>
           <p className="text-gray-400 text-xs sm:text-sm tracking-[0.6em] uppercase font-bold">Assemble Your Squad</p>
           <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-gray-500"></div>
         </div>
+        
+        <a 
+          href="https://codewar1.mechimavericks.tech" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-teal-500/60 hover:text-teal-400 text-[10px] sm:text-xs tracking-widest uppercase font-bold transition-colors duration-300 flex items-center gap-2 border-b border-teal-500/20 pb-1"
+        >
+          Looking for CodeWar 1.0? Visit the Archive
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
       </motion.div>
 
       {/* Decorative corner accents */}
