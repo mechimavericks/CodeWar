@@ -89,7 +89,7 @@ function Sponsors() {
     },
     {
       name: "Kharaayo Inc.",
-      logo: "https://i.ibb.co/C5KyvKnx/kharaayo.png",
+      logo: "https://i.ibb.co/gLYSPFjV/Group336.png",
       link: "https://kharaayo.com/",
       title: "Career Growth Partner",
     },
@@ -108,20 +108,20 @@ function Sponsors() {
     {
       name: "Programiz",
       logo: "https://i.ibb.co/KxFn9Lpg/programiz.png",
-      link:"https://www.programiz.com/",
-      title:"E-Learning Partner"
+      link: "https://www.programiz.com/",
+      title: "E-Learning Partner"
     },
     {
-      name:"Nepali Blood Donors",
-      logo:"https://i.ibb.co/GBgmbm6/blooddonorsnepal.png",
-      link:"https://nepaliblooddonors.com/",
-      title:"LifeLine Partner"
+      name: "Nepali Blood Donors",
+      logo: "https://i.ibb.co/GBgmbm6/blooddonorsnepal.png",
+      link: "https://nepaliblooddonors.com/",
+      title: "LifeLine Partner"
     },
     {
-      name:"Bridge International",
-      logo:"https://i.ibb.co/20PzRMQK/bridge.png",
-      link:"https://bridgeint.co.uk/",
-      title:"Abroad Study partner"
+      name: "Bridge International",
+      logo: "https://i.ibb.co/20PzRMQK/bridge.png",
+      link: "https://bridgeint.co.uk/",
+      title: "Abroad Study partner"
     }
   ];
 
@@ -134,7 +134,7 @@ function Sponsors() {
         <div className="absolute top-1/3 right-0 w-64 h-64 bg-teal-600 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-600 rounded-full filter blur-3xl"></div>
       </div>
-      
+
       <div ref={ref} className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -145,22 +145,22 @@ function Sponsors() {
           <div className="inline-block px-4 py-1.5 rounded-full bg-teal-900/40 text-teal-400 text-sm font-medium border border-teal-700/30 mb-4">
             Partnerships & Support
           </div>
-          
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">
             <span className="bg-gradient-to-r from-teal-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent">
               Our Sponsors
             </span>
           </h1>
-          
+
           <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
-          
+
           <p className="text-gray-300 text-center max-w-2xl mx-auto">
             We are grateful to our sponsors for their generous support.
           </p>
         </motion.div>
 
         {isMounted ? (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
