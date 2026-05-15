@@ -7,7 +7,7 @@ import Button from "./ui/Button";
 import { motion } from "framer-motion";
 
 function Landing() {
-  const url = "https://i.ibb.co/j9vk4vK6/R-min.jpg";
+  const url = "./images/hero-image.jpg";
   const [isRegistrationClosed, setIsRegistrationClosed] = useState(false);
   const deadlineDate = new Date("2025-05-28T23:59:59");
 
@@ -201,8 +201,8 @@ function Landing() {
                 </span>
               </a>
           )} */}
-          
-          
+
+
           <a
             href="https://practice.geeksforgeeks.org/contest/codewar-10"
             target="_blank"
@@ -278,9 +278,9 @@ function Landing() {
                   </div>
                 );
               }
-              else{
+              else {
                 return (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
@@ -288,7 +288,7 @@ function Landing() {
                   >
                     {/* Background glow effect */}
                     <div className="absolute -inset-8 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 rounded-full blur-2xl opacity-60"></div>
-                    
+
                     {/* Main content */}
                     <div className="relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm rounded-xl p-8 border border-teal-500/30 shadow-2xl">
                       {/* Icon */}
@@ -331,9 +331,9 @@ function Landing() {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
-                        <a 
-                          href="https://discord.gg/AGxmYRyWFN" 
-                          target="_blank" 
+                        <a
+                          href="https://discord.gg/AGxmYRyWFN"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-teal-300 text-sm font-medium hover:text-teal-200 transition-colors duration-200"
                         >
