@@ -108,7 +108,7 @@ function Footer() {
             className="flex flex-col md:flex-row justify-center items-center gap-4"
           >
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} CodeWar 1.0. All rights reserved.
+              © {new Date().getFullYear()} CodeWar 2.0. All rights reserved.
             </p>
           </motion.div>
         </div>

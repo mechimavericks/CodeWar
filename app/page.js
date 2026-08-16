@@ -20,14 +20,14 @@ export default function Home() {
       <Timeline />
       <Prizes />
       <Organized />
-      <EventLeads />
+      {/* <EventLeads /> */}
       <Sponsors />
       <PoweredBy />
       <SupportedBy />
       <OurAdvisor />
       <WhatIsCodeWar />
       <SampleQuestions />
-      <PastWinners />
+      {/* <PastWinners /> */}
       <FAQS />
       <Footer />
     </>

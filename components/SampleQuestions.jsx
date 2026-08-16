@@ -124,7 +124,7 @@ const SampleQuestions = () => {
             <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
             
             <p className="text-gray-300 text-center max-w-2xl">
-              Here are some sample questions to give you an idea of what to expect at CodeWar 1.0
+              Here are some sample questions to give you an idea of what to expect at CodeWar 2.0
             </p>
           </motion.div>
 

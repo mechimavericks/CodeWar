@@ -30,7 +30,7 @@ function WhatIsCodeWar() {
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">
             <span className="bg-gradient-to-r from-teal-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent">
-              What is CodeWar 1.0?
+              What is CodeWar 2.0?
             </span>
           </h1>
           
@@ -44,7 +44,7 @@ function WhatIsCodeWar() {
           className="max-w-4xl mx-auto bg-gray-800/50 rounded-xl p-6 sm:p-8 md:p-10 backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/30 transition-all duration-300 shadow-xl hover:shadow-teal-500/10"
         >
           <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed text-justify">
-            CodeWar 1.0 is a competitive coding event organized by Mechi
+            CodeWar 2.0 is a competitive coding event organized by Mechi
             Mavericks in collaboration with the BCA Association of Mechi
             Multiple Campus. It is an opportunity for students to test their
             problem-solving skills, collaborate with peers, and enhance their
@@ -55,7 +55,7 @@ function WhatIsCodeWar() {
             The event consists of multiple challenging rounds, including
             individual and team-based programming tasks, designed to push
             participants&apos; logical and analytical thinking. Whether you are
-            a beginner or an advanced programmer, CodeWar 1.0 provides a
+            a beginner or an advanced programmer, CodeWar 2.0 provides a
             platform to showcase your abilities and learn from others in a
             dynamic, competitive environment.
           </p>

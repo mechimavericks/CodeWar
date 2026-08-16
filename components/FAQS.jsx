@@ -38,7 +38,7 @@ function FAQS() {
             <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
             
             <p className="text-gray-300 text-center max-w-2xl mx-auto">
-              Here are some common questions about CodeWar 1.0 and its details.
+              Here are some common questions about CodeWar 2.0 and its details.
             </p>
           </motion.div>
 
@@ -51,7 +51,7 @@ function FAQS() {
             <details className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/30 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-teal-500/10">
               <summary className="flex justify-between items-center p-5 sm:p-6 cursor-pointer">
                 <h3 className="text-base sm:text-lg md:text-xl font-medium pr-2 text-white">
-                  What is CodeWar 1.0?
+                  What is CodeWar 2.0?
                 </h3>
                 <span className="transition-transform duration-300 group-open:rotate-180 text-teal-400">
                   <svg
@@ -70,7 +70,7 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                CodeWar 1.0 is a coding competition exclusively for the students
+                CodeWar 2.0 is a coding competition exclusively for the students
                 at Mechi Multiple Campus. It aims to promote problem-solving and
                 coding skills through challenging coding problems, teamwork, and
                 innovative thinking.
@@ -80,7 +80,7 @@ function FAQS() {
             <details className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/30 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-teal-500/10">
               <summary className="flex justify-between items-center p-5 sm:p-6 cursor-pointer">
                 <h3 className="text-base sm:text-lg md:text-xl font-medium pr-2 text-white">
-                  How can I register for CodeWar 1.0?
+                  How can I register for CodeWar 2.0?
                 </h3>
                 <span className="transition-transform duration-300 group-open:rotate-180 text-teal-400">
                   <svg
@@ -99,9 +99,9 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                You can register for CodeWar 1.0 through the official
+                You can register for CodeWar 2.0 through the official
                 registration form available on the event&apos;s website.
-                Registration is mandatory to participate in the event.
+                Registration opens on August 20, 2026.
               </div>
             </details>
 
@@ -127,7 +127,7 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                CodeWar 1.0 allows individual participation only. The organizers
+                CodeWar 2.0 allows individual participation only. The organizers
                 will be responsible for forming groups and assigning
                 participants to teams based on their skill levels, ensuring a
                 balanced and competitive environment for everyone.
@@ -186,7 +186,7 @@ function FAQS() {
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
                 While prior coding experience is helpful, it is not mandatory.
-                CodeWar 1.0 encourages participants from various backgrounds,
+                CodeWar 2.0 encourages participants from various backgrounds,
                 including those who are still learning programming. The
                 challenges are designed to accommodate different skill levels.
               </div>
@@ -243,16 +243,15 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                Yes! CodeWar 1.0 will award prizes to the top scorers based on
-                their performance throughout the event. These prizes may include
-                recognition, certificates, and other exciting rewards.
+                Prizes for CodeWar 2.0 are TBD (To Be Determined) for now.
+                Full details regarding rewards, certificates, and recognition will be announced soon!
               </div>
             </details>
 
             <details className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/30 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-teal-500/10">
               <summary className="flex justify-between items-center p-5 sm:p-6 cursor-pointer">
                 <h3 className="text-base sm:text-lg md:text-xl font-medium pr-2 text-white">
-                  When and where is CodeWar 1.0 happening?
+                  When and where is CodeWar 2.0 happening?
                 </h3>
                 <span className="transition-transform duration-300 group-open:rotate-180 text-teal-400">
                   <svg
@@ -271,7 +270,7 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                CodeWar 1.0 will take place on June 05 and 06, 2025, starting at
+                CodeWar 2.0 will take place on September 02 and 03, 2026, starting at
                 9:30 AM onwards. It will be hosted physically at the BCA
                 Department of Mechi Multiple Campus, and participants will join
                 through the event&apos;s designated platform.
@@ -301,7 +300,7 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                Yes, CodeWar 1.0 is for All the students at Mechi Multiple
+                Yes, CodeWar 2.0 is for All the students at Mechi Multiple
                 Campus. We encourage you to stay tuned for future events.
               </div>
             </details>
@@ -309,7 +308,7 @@ function FAQS() {
             <details className="group bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/30 rounded-lg overflow-hidden transition-all duration-300 shadow-lg hover:shadow-teal-500/10">
               <summary className="flex justify-between items-center p-5 sm:p-6 cursor-pointer">
                 <h3 className="text-base sm:text-lg md:text-xl font-medium pr-2 text-white">
-                  How can I prepare for CodeWar 1.0?
+                  How can I prepare for CodeWar 2.0?
                 </h3>
                 <span className="transition-transform duration-300 group-open:rotate-180 text-teal-400">
                   <svg

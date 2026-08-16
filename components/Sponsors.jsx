@@ -74,6 +74,8 @@ function Sponsors() {
     import("react-multi-carousel/lib/styles.css");
   }, []);
 
+  // Sponsors list commented out for now (TBD)
+  /*
   const supportedByList = [
     {
       name: "Defang.io",
@@ -124,8 +126,7 @@ function Sponsors() {
       title: "Abroad Study partner"
     }
   ];
-
-  if (supportedByList.length === 0) return null;
+  */
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white py-16 md:py-20">
@@ -155,72 +156,20 @@ function Sponsors() {
           <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
 
           <p className="text-gray-300 text-center max-w-2xl mx-auto">
-            We are grateful to our sponsors for their generous support.
+            Our sponsors and partners for CodeWar 2.0 will be announced soon.
           </p>
         </motion.div>
 
-        {isMounted ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative container mx-auto px-2 mt-8"
-          >
-            <Carousel
-              responsive={responsive}
-              infinite={true}
-              autoPlay={true}
-              autoPlaySpeed={2000}
-              keyBoardControl={true}
-              customTransition="all 0.8s ease"
-              transitionDuration={800}
-              swipeable={true}
-              draggable={true}
-              showDots={false}
-              arrows={true}
-              customLeftArrow={<CustomLeftArrow />}
-              customRightArrow={<CustomRightArrow />}
-              containerClass="carousel-container py-4"
-              itemClass="px-3 sm:px-4 md:px-6 flex flex-col items-center"
-            >
-              {supportedByList.map((sponsor, index) => (
-                <a
-                  key={`sponsor-${index}`}
-                  href={sponsor.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center justify-center group"
-                >
-                  <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex items-center justify-center p-5 sm:p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-teal-500/30 transition-all duration-300 shadow-xl hover:shadow-teal-500/10">
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="object-contain max-w-full max-h-full rounded-lg transition-all duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="mt-4 sm:mt-5 flex flex-col items-center justify-center">
-                    <span className="text-lg sm:text-xl font-medium bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">
-                      {sponsor.name}
-                    </span>
-                    <span className="text-sm sm:text-base text-gray-400 mt-1">
-                      {sponsor.title}
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </Carousel>
-          </motion.div>
-        ) : (
-          <div className="flex justify-center py-8">
-            <div className="animate-pulse space-y-8">
-              <div className="flex justify-center space-x-12">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="w-48 h-48 bg-gray-800/50 border border-gray-700/50 rounded-xl"></div>
-                ))}
-              </div>
-            </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="flex justify-center container mx-auto px-2 mt-8"
+        >
+          <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 backdrop-blur-md rounded-xl border border-teal-500/30 shadow-xl text-teal-300 font-bold text-xl sm:text-2xl">
+            Sponsors To Be Announced (TBD)
           </div>
-        )}
+        </motion.div>
       </div>
     </section>
   );

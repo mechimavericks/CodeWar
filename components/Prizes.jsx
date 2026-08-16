@@ -24,13 +24,9 @@ function Prizes() {
       gradient: "from-yellow-300 via-teal-200 to-yellow-500",
       textColor: "text-gray-900",
       items: [
-        "Fellowship Program from Kharaayo Inc.",
-        "Exciting Swags & Gifts for Winner",
-        "Defang Pro for 1 Year",
-        "Stickers for participants",
-        "Certificate for all the Participants",
-        "Special Recognition for Winner",
-
+        "Prize Pool & Rewards: TBD",
+        "To Be Announced Soon",
+        "Certificate for all Participants",
       ],
       delay: 0
     },
@@ -39,12 +35,9 @@ function Prizes() {
       gradient: "from-cyan-200 via-blue-300 to-cyan-400",
       textColor: "text-gray-900",
       items: [
-        "Programiz Pro for 1 Year",
-        "Canva Pro for 1 Year",
-        "Stickers for participants",
-        "Certificate for all the Participants",
-        "Special Recognition",
-        "Exciting Gifts"
+        "Prize Pool & Rewards: TBD",
+        "To Be Announced Soon",
+        "Certificate for all Participants",
       ],
       delay: 0.2
     },
@@ -53,11 +46,9 @@ function Prizes() {
       gradient: "from-amber-500 via-orange-400 to-amber-600",
       textColor: "text-white",
       items: [
-        "Canva Pro for 1 Year",
-        "Stickers for participants",
-        "Certificate for all the Participants",
-        "Recognition",
-        "Participation Gifts"
+        "Prize Pool & Rewards: TBD",
+        "To Be Announced Soon",
+        "Certificate for all Participants",
       ],
       delay: 0.4
     }
@@ -70,11 +61,11 @@ function Prizes() {
         <div className="absolute top-1/4 left-0 w-40 h-40 bg-teal-600 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-60 h-60 bg-blue-600 rounded-full filter blur-3xl"></div>
       </div>
-      
+
       <div ref={ref}>
         <section className="py-16 relative z-10">
           {/* Header */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -83,17 +74,17 @@ function Prizes() {
             <div className="inline-block px-4 py-1.5 rounded-full bg-teal-900/40 text-teal-400 text-sm font-medium border border-teal-700/30 mb-4">
               Recognition & Rewards
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">
               <span className="bg-gradient-to-r from-teal-300 via-cyan-200 to-blue-300 bg-clip-text text-transparent">
-                Prizes & Awards
+                Prizes & Awards (TBD)
               </span>
             </h1>
-            
+
             <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
-            
-            <p className="text-gray-300 text-center max-w-2xl">
-              Please note that the prizes and awards are subject to change as per the event&apos;s requirements.
+
+            <p className="text-gray-300 text-center max-w-2xl font-medium">
+              Prizes for CodeWar 2.0 are <span className="text-teal-400 font-bold">TBD</span> for now. Full reward details will be announced soon!
             </p>
           </motion.div>
 
@@ -118,17 +109,17 @@ function Prizes() {
                           {prize.title}
                         </span>
                       </div>
-                      
+
                       {/* Card content */}
                       <div className="flex flex-col h-full p-8 pt-10">
                         {/* Prize glow effect */}
                         <div className="absolute inset-0 bg-gradient-to-b from-teal-600/5 to-transparent opacity-30"></div>
-                        
+
                         {/* Icon */}
                         <div className="flex justify-center mb-6 mt-4">
                           <div className={`p-3 rounded-full bg-gradient-to-r from-teal-500/20 to-cyan-500/20 border border-teal-500/30`}>
-                            <svg 
-                              xmlns="http://www.w3.org/2000/svg" 
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
                               className="h-8 w-8 text-teal-400"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -137,7 +128,7 @@ function Prizes() {
                             </svg>
                           </div>
                         </div>
-                        
+
                         {/* Prize list */}
                         <div className="flex-grow">
                           <ul className="space-y-4">
@@ -157,33 +148,31 @@ function Prizes() {
               ))}
             </div>
           </div>
-          
-          {/* Exclusive Merchandise Section */}
-          <motion.div 
+
+          {/* Exclusive Merchandise Section - Commented out for now */}
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-16 max-w-4xl mx-auto px-4"
           >
             <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 border border-teal-500/20 rounded-xl p-8 backdrop-blur-sm shadow-xl relative overflow-hidden">
-              {/* Background glow effect */}
               <div className="absolute -top-16 -right-16 w-32 h-32 bg-teal-500/20 rounded-full filter blur-3xl"></div>
               <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-cyan-500/20 rounded-full filter blur-2xl"></div>
-              
+
               <div className="flex flex-col md:flex-row items-center gap-6 relative z-10">
-                {/* Icon */}
                 <div className="p-4 rounded-full bg-gradient-to-br from-teal-500/30 to-cyan-500/20 border border-teal-400/30 shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                   </svg>
                 </div>
-                
+
                 <div>
                   <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">
                     Exclusive Merchandise from{" "}
-                    <a 
-                      href="https://kharaayo.com/" 
-                      target="_blank" 
+                    <a
+                      href="https://kharaayo.com/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-pink-400 hover:text-pink-300 transition-colors duration-300 underline decoration-dotted underline-offset-2 font-semibold"
                     >
@@ -201,7 +190,7 @@ function Prizes() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </section>
       </div>
     </div>

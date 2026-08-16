@@ -111,7 +111,7 @@ function Timeline() {
                   Our Journey
                 </h3>
                 <h4 className="text-xl font-semibold bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent mb-4">
-                  CodeWar 2025
+                  CodeWar 2026
                 </h4>
                 <p className="text-gray-400 mb-6 text-sm sm:text-base">
                   Follow our path as we prepare for the ultimate coding showdown.
@@ -138,18 +138,18 @@ function Timeline() {
             <div className="col-span-12 sm:col-span-8 space-y-6 text-justify">
               <TimeLineCard
                 title="Registration"
-                date="23 April 2025 - 27st May 2025"
-                description="Registration for CodeWar 1.0 opens from April, 2025, until May 27, 2025. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
+                date="20th August 2026 - 27th August 2026"
+                description="Registration for CodeWar 2.0 opens on August 20, 2026, until August 27, 2026. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
               />
               <TimeLineCard
                 title="Formation of Teams"
-                date="2th June 2025"
-                description="The team formation will be completed on 02th June, 2025. The formatted teams will be notified via email and need to cooperate during the competition."
+                date="28th August 2026 - 01st September 2026"
+                description="The team formation will take place from 28th August to 01st September 2026. The formatted teams will be notified via email and need to cooperate during the competition."
               />
               <TimeLineCard
                 title="Main Event"
-                date="05th - 06th June 2025"
-                description="The main event will take place on June 05 and 06, 2025. Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
+                date="02nd - 03rd September 2026"
+                description="The main event will take place on September 02 and 03, 2026. Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
               />
             </div>
           </div>

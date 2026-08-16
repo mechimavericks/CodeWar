@@ -21,7 +21,7 @@ function EventLeads() {
       name: "Samir Kharel",
       role: "Event Lead",
       description:
-        "Leading the overall coordination and management of CodeWar 1.0, ensuring a seamless experience for all participants.",
+        "Leading the overall coordination and management of CodeWar 2.0, ensuring a seamless experience for all participants.",
       gradient: "from-teal-500 to-cyan-500",
       textColor: "text-teal-400",
       email: "shameerkharel2@gmail.com",
@@ -70,7 +70,7 @@ function EventLeads() {
           <div className="h-1.5 w-24 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto rounded-full mb-6"></div>
 
           <p className="text-gray-300 text-center max-w-2xl mx-auto">
-            The dedicated team leading CodeWar 1.0 to success
+            The dedicated team leading CodeWar 2.0 to success
           </p>
         </motion.div>
 
