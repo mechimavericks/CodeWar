@@ -3,13 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import dynamic from "next/dynamic";
-
-// Dynamically import Carousel with SSR disabled
-const Carousel = dynamic(
-  () => import("react-multi-carousel").then((mod) => mod.default),
-  { ssr: false }
-);
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
   desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
@@ -71,7 +66,6 @@ function SupportedBy() {
 
   useEffect(() => {
     setIsMounted(true);
-    import("react-multi-carousel/lib/styles.css");
   }, []);
 
   const supportedByList = [

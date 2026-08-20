@@ -188,32 +188,42 @@ function Landing() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 mt-2 md:mt-4"
+          className="flex flex-wrap justify-center items-start gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 mt-2 md:mt-4"
         >
-          <div className="relative overflow-hidden group bg-gradient-to-r from-teal-500/80 to-cyan-600/80 text-white font-medium px-6 py-3 rounded-lg shadow-lg flex items-center border border-teal-400/30 cursor-not-allowed opacity-90">
-            <span className="relative flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+          <div className="flex flex-col items-center gap-1.5">
+            <div className="relative overflow-hidden group bg-gradient-to-r from-teal-500/80 to-cyan-600/80 text-white font-medium px-6 py-3 rounded-lg shadow-lg flex items-center border border-teal-400/30 cursor-not-allowed opacity-90">
+              <span className="relative flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                Registration Form
+              </span>
+            </div>
+            <span className="text-xs font-semibold text-teal-300 bg-teal-950/60 px-2.5 py-0.5 rounded-full border border-teal-500/30 shadow-sm">
               Coming Soon
             </span>
           </div>
 
-          <a
-            href="https://practice.geeksforgeeks.org/contest/codewar-10"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-blue-500/40 transition-all duration-300 flex items-center border border-blue-400/30"
-          >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400/20 to-indigo-400/20 blur-md group-hover:opacity-75 transition-opacity duration-300 opacity-0"></span>
-            <span className="absolute -inset-1 bg-blue-500/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            <span className="relative flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-              Event Page
+          <div className="flex flex-col items-center gap-1.5">
+            <a
+              href="https://practice.geeksforgeeks.org/contest/codewar-10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-blue-500/40 transition-all duration-300 flex items-center border border-blue-400/30"
+            >
+              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-400/20 to-indigo-400/20 blur-md group-hover:opacity-75 transition-opacity duration-300 opacity-0"></span>
+              <span className="absolute -inset-1 bg-blue-500/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="relative flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                Event Page
+              </span>
+            </a>
+            <span className="text-xs font-semibold text-blue-300 bg-blue-950/60 px-2.5 py-0.5 rounded-full border border-blue-500/30 shadow-sm">
+              Coming Soon
             </span>
-          </a>
+          </div>
         </motion.div>
 
         {/* Application Timeline section */}
