@@ -138,18 +138,18 @@ function Timeline() {
             <div className="col-span-12 sm:col-span-8 space-y-6 text-justify">
               <TimeLineCard
                 title="Registration"
-                date="20th August 2026 - 27th August 2026"
-                description="Registration for CodeWar 2.0 opens on August 20, 2026, until August 27, 2026. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
+                date="23rd August 2026 - 06th September 2026"
+                description="Registration for CodeWar 2.0 opens on August 23, 2026, until September 06, 2026. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
               />
               <TimeLineCard
                 title="Formation of Teams"
-                date="28th August 2026 - 01st September 2026"
-                description="The team formation will take place from 28th August to 01st September 2026. The formatted teams will be notified via email and need to cooperate during the competition."
+                date="07th September 2026 - 10th September 2026"
+                description="The team formation will take place from 07th September to 10th September 2026. The formatted teams will be notified via email and need to cooperate during the competition."
               />
               <TimeLineCard
                 title="Main Event"
-                date="02nd - 03rd September 2026"
-                description="The main event will take place on September 02 and 03, 2026. Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
+                date="15th - 16th September 2026"
+                description="The main event will take place on September 15 and 16, 2026. Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
               />
             </div>
           </div>

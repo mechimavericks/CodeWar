@@ -101,7 +101,7 @@ function FAQS() {
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
                 You can register for CodeWar 2.0 through the official
                 registration form available on the event&apos;s website.
-                Registration opens on August 20, 2026.
+                Registration opens on August 23, 2026, and closes on September 06, 2026.
               </div>
             </details>
 
@@ -270,7 +270,7 @@ function FAQS() {
                 </span>
               </summary>
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
-                CodeWar 2.0 will take place on September 02 and 03, 2026, starting at
+                CodeWar 2.0 will take place on September 15 and 16, 2026, starting at
                 9:30 AM onwards. It will be hosted physically at the BCA
                 Department of Mechi Multiple Campus, and participants will join
                 through the event&apos;s designated platform.
