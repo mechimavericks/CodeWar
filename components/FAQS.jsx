@@ -101,7 +101,7 @@ function FAQS() {
               <div className="p-5 sm:p-6 pt-0 text-base sm:text-lg text-gray-300 border-t border-gray-700/50">
                 You can register for CodeWar 2.0 through the official
                 registration form available on the event&apos;s website.
-                Registration opens on August 23, 2026, and closes on September 06, 2026.
+                Registration opens on September 08, 2026, and closes on September 12, 2026.
               </div>
             </details>
 

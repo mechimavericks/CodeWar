@@ -191,22 +191,24 @@ function Landing() {
           className="flex flex-wrap justify-center items-start gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 mt-2 md:mt-4"
         >
           <div className="flex flex-col items-center gap-1.5">
-            <div className="relative overflow-hidden group bg-gradient-to-r from-teal-500/80 to-cyan-600/80 text-white font-medium px-6 py-3 rounded-lg shadow-lg flex items-center border border-teal-400/30 cursor-not-allowed opacity-90">
+            <a
+              href="https://forms.gle/Hsj3y7eejgUNvDjW8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative overflow-hidden group bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-teal-500/40 transition-all duration-300 flex items-center border border-teal-400/30"
+            >
               <span className="relative flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
                 Registration Form
               </span>
-            </div>
-            <span className="text-xs font-semibold text-teal-300 bg-teal-950/60 px-2.5 py-0.5 rounded-full border border-teal-500/30 shadow-sm">
-              Coming Soon
-            </span>
+            </a>
           </div>
 
           <div className="flex flex-col items-center gap-1.5">
             <a
-              href="https://practice.geeksforgeeks.org/contest/codewar-10"
+              href="https://practice.geeksforgeeks.org/contest/codewar-20"
               target="_blank"
               rel="noopener noreferrer"
               className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-blue-500/40 transition-all duration-300 flex items-center border border-blue-400/30"
@@ -220,9 +222,6 @@ function Landing() {
                 Event Page
               </span>
             </a>
-            <span className="text-xs font-semibold text-blue-300 bg-blue-950/60 px-2.5 py-0.5 rounded-full border border-blue-500/30 shadow-sm">
-              Coming Soon
-            </span>
           </div>
         </motion.div>
 
@@ -256,7 +255,7 @@ function Landing() {
               </div>
 
               <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 backdrop-blur-md rounded-xl border border-teal-500/30 shadow-lg text-teal-300 font-bold text-lg sm:text-xl">
-                Coming Soon
+                Open until September 12, 2026
               </div>
             </div>
           </motion.div>
