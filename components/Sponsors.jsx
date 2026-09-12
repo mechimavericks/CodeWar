@@ -89,12 +89,12 @@ function Sponsors() {
       link: "https://www.geeksforgeeks.org/",
       title: "Learning Partner",
     },
-    // {
-    //   name: "Kharaayo Inc.",
-    //   logo: "https://i.ibb.co/gLYSPFjV/Group336.png",
-    //   link: "https://kharaayo.com/",
-    //   title: "Career Growth Partner",
-    // },
+    {
+      name: "Kharaayo Inc.",
+      logo: "https://i.ibb.co/gLYSPFjV/Group336.png",
+      link: "https://kharaayo.com/",
+      title: "Career Growth Partner",
+    },
     {
       name: "GitHub Education",
       logo: "https://i.ibb.co/ynrmNS6V/github-6980894-1280.png",
@@ -119,6 +119,12 @@ function Sponsors() {
       link: "https://nepaliblooddonors.com/",
       title: "LifeLine Partner"
     },
+    {
+      name: "The Next Education Consultancy",
+      logo: "https://thenextglobal.com/wp-content/uploads/2024/09/thenextlogo.png",
+      link: "https://thenextglobal.com/",
+      title: "Abroad Study partner"
+    }
     // {
     //   name: "Bridge International",
     //   logo: "https://i.ibb.co/20PzRMQK/bridge.png",
