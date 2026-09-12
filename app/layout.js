@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import {Inter} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
   title: "CodeWar 2.0 | Mechi Mavericks",
@@ -10,6 +10,7 @@ export const metadata = {
   image: "https://i.ibb.co/vx8ncYCq/img.png", // Replace with the actual image URL for CodeWar 2.0
   url: "https://codewar.mechimavericks.tech/",
   type: "website",
+  metadataBase: new URL("https://codewar.mechimavericks.tech/"),
   openGraph: {
     type: "website",
     url: "https://codewar.mechimavericks.tech/",
@@ -20,7 +21,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

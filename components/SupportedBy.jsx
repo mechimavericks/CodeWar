@@ -96,6 +96,12 @@ function SupportedBy() {
       link: "https://www.facebook.com/profile.php?id=100087511781854",
       isCircular: true,
       title: "Community Partner",
+    }, {
+      name: "Beyond Academia",
+      logo: "https://scontent.fbir7-1.fna.fbcdn.net/v/t39.30808-6/464080863_122103712916579136_7639325087198635540_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=mVPefZiBdHcQ7kNvwFz-GyR&_nc_oc=AdpE--SryGJPp_Is4OTV8qvD226Fy5SiLBjvRRnmEfTp7U_PBLDaHu9dTkc-qYCNiKIl_SFD5Xws8_ayMKH9nJ-6&_nc_zt=23&_nc_ht=scontent.fbir7-1.fna&_nc_gid=XifqC2r1uGtFxFxISK1pBw&_nc_ss=7b2a8&oh=00_AQLEUKoJQsni6jd8eE3rjUr0n9KK6weJduyxJSfNsWU2Dw&oe=6AAAE1CF",
+      link: "https://www.facebook.com/profile.php?id=61567374091745",
+      isCircular: true,
+      title: "Community Partner",
     },
   ];
 
