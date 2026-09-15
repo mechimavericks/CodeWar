@@ -177,7 +177,7 @@ function Landing() {
                 />
               </svg>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-teal-300 to-cyan-200 bg-clip-text text-transparent">
-                September 2026
+                TBD
               </h2>
             </div>
           </motion.div>
@@ -255,7 +255,7 @@ function Landing() {
               </div>
 
               <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 backdrop-blur-md rounded-xl border border-teal-500/30 shadow-lg text-teal-300 font-bold text-lg sm:text-xl">
-                Open until September 12, 2026
+                Open until September 27, 2026
               </div>
             </div>
           </motion.div>
