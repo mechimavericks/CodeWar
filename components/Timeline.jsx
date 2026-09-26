@@ -138,18 +138,18 @@ function Timeline() {
             <div className="col-span-12 sm:col-span-8 space-y-6 text-justify">
               <TimeLineCard
                 title="Registration"
-                date="08th September 2026 - 27th September 2026"
-                description="Registration for CodeWar 2.0 opens on September 08, 2026, until September 27, 2026. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
+                date="08th September 2026 - 04th October 2026"
+                description="Registration for CodeWar 2.0 opens on September 08, 2026, until October 04, 2026. This timeframe provides aspiring participants with the opportunity to register for the upcoming event."
               />
               <TimeLineCard
                 title="Formation of Teams"
-                date="28th September 2026 - 30th September 2026"
-                description="The team formation will take place from 28th September to 30th September 2026. The formatted teams will be notified via email and need to cooperate during the competition."
+                date="05th October 2026 - 06th October 2026"
+                description="The team formation will take place from 5th October to 6th October 2026. The formatted teams will be notified via email and need to cooperate during the competition."
               />
               <TimeLineCard
                 title="Main Event"
-                date="To Be Determined (TBD)"
-                description="The main event date is yet to be announced (TBD). Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
+                date="08th - 09th October 2026"
+                description="The main event will take place on October 8 and 9, 2026. Registered participants and their teams will compete in the final round, which will be held at Mechi Multiple Campus, Bhadrapur, Jhapa."
               />
             </div>
           </div>

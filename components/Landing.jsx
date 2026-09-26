@@ -5,9 +5,13 @@ import { useInView } from "react-intersection-observer";
 import Button from "./ui/Button";
 import { motion } from "framer-motion";
 
+// Registration closes at the end of October 04, 2026 (Nepal Time, UTC+05:45)
+const REGISTRATION_DEADLINE = new Date("2026-10-05T00:00:00+05:45");
+
 function Landing() {
   const url = "./images/hero-image.jpg";
   const [isMounted, setIsMounted] = useState(false);
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(true);
 
   const { ref, replay } = useScramble({
     text: "CODEWAR 2.0",
@@ -28,6 +32,17 @@ function Landing() {
 
   useEffect(() => {
     setIsMounted(true);
+
+    const timeLeft = REGISTRATION_DEADLINE.getTime() - Date.now();
+    if (timeLeft <= 0) {
+      setIsRegistrationOpen(false);
+      return;
+    }
+    // Close registration for visitors who keep the page open past the deadline
+    if (timeLeft < 2 ** 31 - 1) {
+      const timer = setTimeout(() => setIsRegistrationOpen(false), timeLeft);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
@@ -136,48 +151,14 @@ function Landing() {
             className="space-y-3 md:space-y-4"
           >
             <div className="flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 md:h-5 md:w-5 text-teal-400 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
               <h2 className="text-xs sm:text-sm md:text-lg lg:text-xl font-medium text-center text-gray-200">
                 @Mechi Multiple Campus - Bhadrapur, Jhapa
               </h2>
             </div>
 
             <div className="flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 md:h-5 md:w-5 text-teal-400 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-teal-300 to-cyan-200 bg-clip-text text-transparent">
-                TBD
+                October 8 - 9, 2026
               </h2>
             </div>
           </motion.div>
@@ -190,21 +171,23 @@ function Landing() {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="flex flex-wrap justify-center items-start gap-4 sm:gap-5 md:gap-6 px-2 sm:px-4 mt-2 md:mt-4"
         >
-          <div className="flex flex-col items-center gap-1.5">
-            <a
-              href="https://forms.gle/Hsj3y7eejgUNvDjW8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative overflow-hidden group bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-teal-500/40 transition-all duration-300 flex items-center border border-teal-400/30"
-            >
-              <span className="relative flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                </svg>
-                Registration Form
-              </span>
-            </a>
-          </div>
+          {isRegistrationOpen && (
+            <div className="flex flex-col items-center gap-1.5">
+              <a
+                href="https://forms.gle/Hsj3y7eejgUNvDjW8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative overflow-hidden group bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-teal-500/40 transition-all duration-300 flex items-center border border-teal-400/30"
+              >
+                <span className="relative flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                  Registration Form
+                </span>
+              </a>
+            </div>
+          )}
 
           <div className="flex flex-col items-center gap-1.5">
             <a
@@ -225,7 +208,7 @@ function Landing() {
           </div>
         </motion.div>
 
-        {/* Application Timeline section */}
+        {/* Application Timeline / Registration Closed section */}
         {isMounted && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -233,31 +216,98 @@ function Landing() {
             transition={{ delay: 1.2, duration: 0.6 }}
             className="flex justify-center w-full px-4 mt-4 md:mt-6"
           >
-            <div className="flex flex-col items-center gap-4">
-              <div className="flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-teal-400 mr-2 animate-pulse"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-200">
-                  Application Timeline
-                </h2>
-              </div>
+            {isRegistrationOpen ? (
+              <div className="flex flex-col items-center gap-4">
+                <div className="flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-teal-400 mr-2 animate-pulse"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-200">
+                    Application Timeline
+                  </h2>
+                </div>
 
-              <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 backdrop-blur-md rounded-xl border border-teal-500/30 shadow-lg text-teal-300 font-bold text-lg sm:text-xl">
-                Open until September 27, 2026
+                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 backdrop-blur-md rounded-xl border border-teal-500/30 shadow-lg text-teal-300 font-bold text-lg sm:text-xl">
+                  Open until October 04, 2026
+                </div>
               </div>
-            </div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="text-center relative max-w-xl"
+              >
+                {/* Background glow effect */}
+                <div className="absolute -inset-8 bg-gradient-to-r from-teal-500/20 via-cyan-500/20 to-blue-500/20 rounded-full blur-2xl opacity-60"></div>
+
+                {/* Main content */}
+                <div className="relative bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-teal-500/30 shadow-2xl">
+                  {/* Lock icon */}
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-teal-500/30 rounded-full blur-lg animate-pulse"></div>
+                      <div className="relative p-4 bg-gradient-to-br from-teal-500/20 to-cyan-500/20 rounded-full border border-teal-400/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Title */}
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                    <span className="bg-gradient-to-r from-teal-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                      Registration Closed
+                    </span>
+                  </h2>
+
+                  {/* Subtitle */}
+                  <div className="space-y-3 mb-6">
+                    <p className="text-gray-300 text-lg font-medium">
+                      Thank you for your interest in{" "}
+                      <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent font-bold">
+                        CODEWAR 2.0
+                      </span>
+                    </p>
+                    <p className="text-gray-400 text-sm">
+                      The registration period ended on October 04, 2026.
+                      Registered teams will be notified via email. See you on
+                      October 8 - 9, 2026!
+                    </p>
+                  </div>
+
+                  {/* Decorative line */}
+                  <div className="h-1 w-24 bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 mx-auto rounded-full mb-4"></div>
+
+                  {/* Footer message */}
+                  <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500/10 to-cyan-500/10 rounded-full border border-teal-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <a
+                      href="https://discord.gg/tSeEdunV8c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-teal-300 text-sm font-medium hover:text-teal-200 transition-colors duration-200"
+                    >
+                      Join Discord for event updates
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
         )}
       </div>
