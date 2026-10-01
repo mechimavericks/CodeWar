@@ -191,7 +191,7 @@ function Landing() {
 
           <div className="flex flex-col items-center gap-1.5">
             <a
-              href="https://practice.geeksforgeeks.org/contest/codewar-20"
+              href="https://practice.geeksforgeeks.org/contest/codewar-20-4204"
               target="_blank"
               rel="noopener noreferrer"
               className="relative overflow-hidden group bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-blue-500/40 transition-all duration-300 flex items-center border border-blue-400/30"
