@@ -90,23 +90,23 @@ function Sponsors() {
       title: "Learning Partner",
     },
     {
-      name: "Kharaayo Inc.",
-      logo: "https://i.ibb.co/gLYSPFjV/Group336.png",
-      link: "https://kharaayo.com/",
-      title: "Career Growth Partner",
-    },
-    {
       name: "GitHub Education",
       logo: "https://i.ibb.co/ynrmNS6V/github-6980894-1280.png",
       link: "https://education.github.com/",
       title: "Education & Community Partner",
     },
-    // {
-    //   name: "Leapfrog Technology Inc.",
-    //   logo: "https://i.ibb.co/Fk0m5hHJ/leapfrog.png",
-    //   link: "https://www.lftechnology.com/",
-    //   title: "Technology Partner",
-    // },
+    {
+      name: "B&B Tech Group",
+      logo: "https://i.ibb.co/gL0k2XPn/logo.jpg",
+      link: "https://thebandbtech.com",
+      title: "Technology Partner",
+    },
+    {
+      name: "Kharaayo Inc.",
+      logo: "https://i.ibb.co/gLYSPFjV/Group336.png",
+      link: "https://kharaayo.com/",
+      title: "Career Growth Partner",
+    },
     // {
     //   name: "Programiz",
     //   logo: "https://i.ibb.co/KxFn9Lpg/programiz.png",
