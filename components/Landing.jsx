@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 import Button from "./ui/Button";
 import { motion } from "framer-motion";
 
-// Registration closes at the end of October 04, 2026 (Nepal Time, UTC+05:45)
-const REGISTRATION_DEADLINE = new Date("2026-10-05T00:00:00+05:45");
+// Registration closes at the end of October 05, 2026 (Nepal Time, UTC+05:45)
+const REGISTRATION_DEADLINE = new Date("2026-10-06T00:00:00+05:45");
 
 function Landing() {
   const url = "./images/hero-image.jpg";
